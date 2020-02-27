@@ -2,11 +2,22 @@ body {
     font: 14px "Century Gothic", Futura, sans-serif;
     margin: 20px;
   }
-  
+
+   .header {
+     margin-top: 50px;
+     text-align: center;
+     letter-spacing: 5px;
+     font-size: 20px;
+   }
+
+   h1 {
+     font-size: 40px;
+   }
+
   ol, ul {
     padding-left: 30px;
   }
-  
+
   .board-row:after {
     clear: both;
     content: "";
@@ -22,22 +33,22 @@ body {
     color: red;
     border: 1px solid #999;
     float: left;
-    font-size: 24px;
+    font-size: 50px;
     font-weight: bold;
     line-height: 34px;
-    height: 60px;
+    height: 200px;
     margin-right: -1px;
     margin-top: -1px;
     padding: 0;
     text-align: center;
-    width: 60px;
+    width: 200px;
     border-radius: 10px;
     transition: .5s;
   }
 
   .square:hover {
     background-color: black;
-    font-size: 40px;
+    font-size: 65px;
   }
   
   .square:focus {
@@ -49,11 +60,27 @@ body {
   }
   
   .game {
+    
     display: flex;
     flex-direction: row;
+    position: fixed;
+    top: 35%;
+    left: 40%;
+    /* bring your own prefixes */
+    transform: translate(-35%, -35%);
   }
   
+  .board {
+  }
+
   .game-info {
-    margin-left: 20px;
+    margin-right: 75px;
   }
   
+  button {
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+  }
